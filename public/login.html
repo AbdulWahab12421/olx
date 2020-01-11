@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/media.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="login.js"></script>
+</head>
+<body>
+
+
+
+<div class="login-page">
+  <div class="formContainer">
+      <form class="regestration">
+          <input type="text" id="sName" placeholder="User Name">
+          <input type="email" id="sEmail" placeholder="E-mail">
+          <input type="password" id="sPass" placeholder="Type password">
+          <button onclick="signUp()">Creat</button >
+          <p class="message">Already Register? <a href="#">Login</a></p>
+      </form>
+<!-- Sign up form done -->
+
+      <form class="login-form">
+          <input type="text" id="lEmail" placeholder="E-mail">
+          <input type="password" id="lPass" placeholder="Password">
+          <!-- <button onclick="signIn()">login</button> -->
+          <input type="submit" onclick="signIn()">
+          <p class="message">Not Registerd? <a href="#">Register</a></p>
+      </form>
+  </div>
+</div>
+
+
+<script>
+  $('.message a').click(function(){
+  $('form').animate({height:"toggle", opacity:"toggle"},"slow");
+  });
+</script>
+</body><!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCXdu-2xmsMhURfyULIggf9OmuUUhUS5f0",
+    authDomain: "olxauth.firebaseapp.com",
+    databaseURL: "https://olxauth.firebaseio.com",
+    projectId: "olxauth",
+    storageBucket: "olxauth.appspot.com",
+    messagingSenderId: "448019050262",
+    appId: "1:448019050262:web:8ef9ddcffd276024b3aa37"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</html>

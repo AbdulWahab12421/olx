@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add post</title>
+  
+</head>
+<body>
+    <div id="postFoam"> 
+    
+        <div class="heading">   
+            <h1>Post Add Foam</h1>
+        </div>
+        <div class="select"> 
+            <p><b>Select Category</b> 
+                <select id="category">
+                    <option value="Mobiles">Mobiles</option>
+                    <option value="cars">cars</option>
+                    <option value="Laptops">Laptops</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Laptops">Laptops</option>
+                    <option value="Shoes">Shoes</option>
+                </select>
+            </p><br>
+        </div>
+
+        <p><b>Location</b>
+            <input id="Location" type="text" placeholder=" Choose Location">
+        </p><br>
+        <p><b>Brand</b>
+            <input id="Brand" type="text" placeholder="Brand name">
+        </p><br>
+        <p><b>Price</b>
+            <input id="Price" type="text" placeholder="Rs:">
+        </p><br>
+
+        <p><b>Discruption</b>
+            <input id="Discruption" type="discruption" placeholder="Discruption">
+        </p><br>
+        <p><b>Select File</b>
+        <input id="File" type="file">
+        </p>
+        <p><b>Contact</b>
+            <input id="Contact" type="number" placeholder="Phone number">
+        </p><br>
+        <p><b>Address</b>
+            <input id="Address" type="text" placeholder="Address">
+        </p>
+        <button  onClick="showData()">Post Add</button>
+        <button  onClick="signOut()">Chal Nikal</button>
+
+</div>
+
+<!-- CSS -->
+<style>
+    #postFoam{
+        width: 50%;
+        height: 100%;
+        background-color:rgb(174, 199, 191);
+        margin-left: 25%;
+        text-align: center;
+        border: solid black 2px;padding: 5px;
+    }
+    input{
+        width: 230px;
+        height: 35px;
+        padding-left: 5px;
+    }
+.Heading{
+    text-align: center;
+}
+
+</style>
+</body><!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCXdu-2xmsMhURfyULIggf9OmuUUhUS5f0",
+    authDomain: "olxauth.firebaseapp.com",
+    databaseURL: "https://olxauth.firebaseio.com",
+    projectId: "olxauth",
+    storageBucket: "olxauth.appspot.com",
+    messagingSenderId: "448019050262",
+    appId: "1:448019050262:web:8ef9ddcffd276024b3aa37"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="login.js"></script>
+<script src="submit.js"></script>
+</html>

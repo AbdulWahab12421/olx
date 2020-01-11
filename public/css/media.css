@@ -1,0 +1,72 @@
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+    /* Header Start */
+.header{
+    height:80px;
+    background-color: #f1f1f1;
+}
+.searchBar{
+    display: none;
+}
+.col1{
+    flex: 3;
+    float: left;
+}
+.col3{
+    flex: 1.1;
+    float: left;
+    padding-left: 0px;
+}
+.btn1{
+    width:40%;
+}
+.btn2{
+    width:60%;
+}
+/* Header Ends */
+
+
+/* Menu Start */
+.menu ul li {
+    padding-left: 2px;
+    width:auto;
+    float: left;
+    overflow: hidden;
+    font-size: 11px;
+}
+/* Menu Ends*/
+
+/* Container Start*/
+.inner{
+    width:90%;
+    margin-left: 5%;
+}
+.heading{
+    margin-left: 3%;
+}
+.loadbtn{
+    margin-left: 40%;
+}
+/* Container Ends */
+
+/* Footer Start */
+.footer{
+    float: left;
+    height:350px;
+}
+.ite{
+    width: 40%;
+    padding-left: 0;
+}
+/* Footer Ends */
+
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
